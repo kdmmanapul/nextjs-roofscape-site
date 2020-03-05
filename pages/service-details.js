@@ -1,13 +1,14 @@
 import { useRouter } from 'next/router'
 import Header from "./components/header"
 import Footer from "./components/footer"
+import Pixel from '../components/Pixel'
 
 function ServiceDetailsPage() {
     const router = useRouter()
     const typeOfService = router.query.type
-    console.log(router.query.type)
     return(
         <div>
+            <Pixel name='FACEBOOK_PIXEL_1' />
             <Header/>
             <main>
                 <div class="pagehding-sec">

@@ -2,12 +2,14 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Header from "./components/header"
 import Footer from "./components/footer"
+import Pixel from '../components/Pixel'
 
 function ServicePage() {
     const router = useRouter();
     const projectName = router.query.projectName;
     return(
         <div>
+            <Pixel name='FACEBOOK_PIXEL_1' />
             <Header/>
             <main>
                 <div class="pagehding-sec">
