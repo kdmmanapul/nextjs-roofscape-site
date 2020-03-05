@@ -5,7 +5,7 @@ const dataValues = [
     {
         type: "Repair",
         name: "Construction Repair Service",
-        img: "img/lp1.jpg"
+        img: "img/lp1.jpg",
     },
     {
         type: "Management",
@@ -90,8 +90,8 @@ const HomePage = () => (
                     </div>
                     <div class="col-md-6">
                         <div class="about-us-thumb">
-                            <img src="img/exterior.png" alt=""/>
-                            <img src="img/interior.png" alt="" style={{ margin: "1rem 0 0 8rem" }}/>
+                            <img style={{ marginBottom: 10 }} src="img/exterior.png" alt=""/>
+                            <img class="img-warehouse" src="img/interior.png" alt=""/>
                         </div>
                     </div>
                 </div>
@@ -287,7 +287,7 @@ const HomePage = () => (
 
                     {/* <div class="col-md-6 col-sm-12 col-xs-12"> */}
                         <div class="why-choose-v1">
-                            <div class="why-choose-v1-title">
+                            <div class="why-choose-v1-title" style={{ marginLeft: 10 }}>
                                 <span>Why Choose Us</span>
                                 <h1>Why Trust Our Client</h1>
                             </div>
@@ -453,8 +453,8 @@ const HomePage = () => (
                                                 <div class="gallery-overlay-text">
                                                     <h2><a href="#">{o.name}</a></h2>
                                                     <span class="gallery-button">
-                                                    <a href={o.img} class="gallery-photo"><i class="icofont-image"></i></a>
-                                                    <a href="#"><i class="icofont-external-link"></i></a>
+                                                    {/* <a href={o.img} class="gallery-photo"><i class="icofont-image"></i></a> */}
+                                                    <a href={`project-details?projectName=${o.name}`}><i class="icofont-external-link"></i></a>
                                                     </span>
                                                 </div>
                                             </div>

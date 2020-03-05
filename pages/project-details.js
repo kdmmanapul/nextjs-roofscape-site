@@ -63,7 +63,7 @@ function ServicePage() {
                                     <div class="project-details-info">
                                         <h2>Project Info</h2>
                                         <ul>
-                                            <li>Project Name:<span>Architectural</span></li>
+                                            <li>Project Name:<span>{projectName}</span></li>
                                             {/* <li>Starting Date:<span>21/01/2019</span></li>
                                             <li>Ending Date:<span>14/03/2019</span></li> */}
                                             <li>Duration:<span>2 Month</span></li>

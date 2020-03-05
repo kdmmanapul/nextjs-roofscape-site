@@ -1,12 +1,27 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Link from 'next/link';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 function Header() {
     const router = useRouter()
+
     return(
         <div>
             <Head>
+            <meta charSet='utf-8' />
+            <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
+            <meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' />
+            <meta name='description' content='Description' />
+            <meta name='keywords' content='Keywords' />
+            <title>Next.js PWA Example</title>
+
+            <link rel="manifest" href="/manifest.json" />
+            <link href='/favicon-16x16.png' rel='icon' type='image/png' sizes='16x16' />
+            <link href='/favicon-32x32.png' rel='icon' type='image/png' sizes='32x32' />
+            <link rel="apple-touch-icon" href="/apple-icon.png"></link>
+            <meta name="theme-color" content="#317EFB"/>
+
             <title>Roofscape Enterprise</title>
             <link rel="icon" href="/favicon.ico" />
             <link rel="apple-touch-icon" href="img/apple-touch-icon.png"/>
@@ -33,7 +48,7 @@ function Header() {
             </Head>
 
             <main>
-            <header class="header-sec">
+            <header>
 
                 <div class="header-top">
                 <div class="container">
@@ -91,45 +106,33 @@ function Header() {
                         <nav id="main-menu" class="main-menu">
                         <ul>
                             <li class={router.pathname === "/" ? "active" : null}><Link href="/"><a>Home</a></Link>
-                            {/* <ul>
-                                <li><a href="index.html">Home Version 1</a></li>
-                                <li><a href="index-2.html">Home Version 2</a></li>
-                                <li><a href="index-3.html">Home Version 3</a></li>
-                                <li><a href="index-4.html">Home Version 4</a></li>
-                            </ul> */}
                             </li>
                             <li class={router.pathname === "/about" ? "active" : null}><Link href="/about"><a>About Us</a></Link></li>
                             <li class={router.pathname === "/service" || router.pathname === "service-details" ? "active" : null}><Link href="/service"><a>Service</a></Link>
-                            <ul>
-                                {/* <li><a href="service.html">service Page</a></li>
-                                <li><a href="service-2.html">service V2 Page</a></li>
-                                <li><a href="service-3.html">service V3 Page</a></li> */}
+                            {/* <ul>
                                 <li><Link href="/service-details"><a>Service Details</a></Link></li>
-                            </ul>
+                            </ul> */}
                             </li>
                             <li class={router.pathname === "/projects" || router.pathname === "project-details" ? "active" : null}><Link href="/projects"><a>Project</a></Link>
-                            <ul>
-                                {/* <li><a href="project.html">project Page</a></li>
-                                <li><a href="project-2.html">project V2 Page</a></li> */}
+                            {/* <ul>
                                 <li><Link href="/project-details"><a>Project Details</a></Link></li>
-                            </ul>
+                            </ul> */}
                             </li>
                             <li class={router.pathname === "/contact" ? "active" : null}><Link href="/contact"><a>Contact</a></Link></li>
                         </ul>
                         </nav>
 
                         {/* <div class="search-bar-icon">
-                        <div class="site-search">
-                        <span data-toggle="dropdown"><i class="icofont-search-1"></i></span>
-                        <div class="search-forum dropdown-menu animation slideUpIn">
-                        <form action="#">
-                        <input placeholder="Search For Site" type="text"/>
-                        <input type="submit" value="Go" />
-                        </form>
-                        </div>
-                        </div>
+                            <div class="site-search">
+                            <span data-toggle="dropdown"><i class="icofont-search-1"></i></span>
+                            <div class="search-forum dropdown-menu animation slideUpIn">
+                            <form action="#">
+                            <input placeholder="Search For Site" type="text"/>
+                            <input type="submit" value="Go" />
+                            </form>
+                            </div>
+                            </div>
                         </div> */}
-
                     </div>
                     </div>
 
@@ -145,8 +148,12 @@ function Header() {
                 </div>
 
             </header>
+            
             </main>
-
+            <MessengerCustomerChat
+                themeColor="#0084FF"
+                pageId={2071208729806750}
+            />
         </div>
     )
 }
