@@ -109,12 +109,12 @@ function ServiceDetailsPage() {
                                     <div class="service-cat-widget">
                                         <h2 class="widget-title">Service Category</h2>
                                         <ul>
-                                            <li><a href={`service-details?type=Roofing`}>Various Roofing Materials</a></li>
-                                            <li><a href={`service-details?type=PVC`}>PVC Walls and Ceiling Panels</a></li>
-                                            <li><a href={`service-details?type=Waterproofing`}>Waterproofing</a></li>
+                                            <li><a href={`service-details?type=Primary%20Materials`}>Primary</a></li>
+                                            <li><a href={`service-details?type=Other%20Materials`}>Secondary</a></li>
+                                            {/* <li><a href={`service-details?type=Waterproofing`}>Waterproofing</a></li>
                                             <li><a href={`service-details?type=GenConstruction`}>General Construction</a></li>
                                             <li><a href={`service-details?type=Importation`}>Importation of Materials</a></li>
-                                            <li><a href={`service-details?type=FinishingMaterials`}>Direct Supplier of Finishing Materials</a></li>
+                                            <li><a href={`service-details?type=FinishingMaterials`}>Direct Supplier of Finishing Materials</a></li> */}
                                         </ul>
                                     </div>
 
@@ -161,7 +161,7 @@ function ServiceDetailsPage() {
                                                     </button>
                                                 </div>
 
-                                                <div style={{ marginTop: 100 }} class="modal fade" id={`${o.type}`} tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                <div style={{ marginTop: 80 }} class="modal fade" id={`${o.type}`} tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                                     <div class="modal-dialog modal-dialog-centered" role="document">
                                                         <div class="modal-content">
                                                         <div class="modal-header" style={{ display: 'flex' }}>
@@ -180,7 +180,7 @@ function ServiceDetailsPage() {
                                                         </div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                            <button type="button" class="btn btn-primary">Inquire</button>
+                                                            <a style={{ color: "white" }} href={`contact?item=${o.title}`}><button type="button" class="btn btn-primary">Inquire</button></a>
                                                         </div>
                                                         </div>
                                                     </div>

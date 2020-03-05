@@ -49,18 +49,14 @@ function Header() {
 
             <main>
             <header>
-                <div id="installContainer" class="hidden">
-                    <button id="butInstall" type="button">
-                        Install
-                    </button>
-                </div>
+
                 <div class="header-top">
                 <div class="container">
                     <div class="row">
 
                     <div class="col-md-3 col-sm-12 col-xs-8">
                         <div class="logo">
-                        <a href="index.html"><img src="img/logo.jpg" alt="" /></a>
+                        <a href="index"><img src="img/logo.jpg" alt="" /></a>
                         </div>
                     </div>
 
@@ -69,7 +65,7 @@ function Header() {
                         <div class="header-left">
                             <span class="contact-tp-title">Need Help? </span>
                         <ul>
-                            <li><i class="icofont-telephone"></i>+00 0123456789</li>
+                            <li><i class="icofont-telephone"></i>+8-330-1703</li>
                             <li><i class="icofont-email"></i><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d3babdb5bc93b0bcbdbaaba3a1b6a0a0fdb0bcbe">[email&#160;protected]</a></li>
                         </ul>
                         </div>

@@ -11,7 +11,7 @@ const Footer = () => (
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-md-4 col-sm-6 footer-widget">
+                        <div class="col-md-6 col-sm-6 footer-widget">
                             <div class="footer-wedget-one">
                                 <h2>About us</h2>
                                 <p>
@@ -29,7 +29,7 @@ const Footer = () => (
                             </div>
                         </div>
 
-                        <div class="col-md-3 col-sm-6 footer-widget">
+                        {/* <div class="col-md-3 col-sm-6 footer-widget">
                             <div class="footer-widget-menu">
                                 <h2>our Service</h2>
                                 <ul>
@@ -59,9 +59,9 @@ const Footer = () => (
                                     <li><a href="#">Privacy Policy</a></li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> */}
 
-                        <div class="col-md-3 col-sm-6 footer-widget">
+                        <div class="col-md-5 col-sm-6 footer-widget">
                             <div class="footer-wedget-four">
 
                                 <div class="footer-contact-inner">
@@ -70,8 +70,9 @@ const Footer = () => (
                                             <i class="icofont-google-map"></i>
                                         </div>
                                         <div class="footer-contact-info-text">
-                                            <span>2361 Oakwood Circle Riverside, CA 92501 </span>
-                                            <span>United State</span>
+                                            <span>ROOFSCAPE ENTERPRISE </span>
+                                            <span>1135 EDSA, Balintawak, Quezon City </span>
+                                            <span>Philippines</span>
                                         </div>
                                     </div>
                                 </div>
@@ -82,8 +83,11 @@ const Footer = () => (
                                             <i class="icofont-email"></i>
                                         </div>
                                         <div class="footer-contact-info-text">
-                                            <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d7aeb8a2a5bab6bebb97b0bab6bebbf9b4b8ba">[email&#160;protected]</a></span>
-                                            <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6b02050d042b08040502131b190e181845080406">[email&#160;protected]</a></span>
+                                            {/* <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d7aeb8a2a5bab6bebb97b0bab6bebbf9b4b8ba">[email&#160;protected]</a></span>
+                                            <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6b02050d042b08040502131b190e181845080406">[email&#160;protected]</a></span> */}
+                                            <span>roofscape@roofscape.com.ph</span>
+                                            <span>customerinquiry@roofscape.com.ph</span>
+                                            <span>customersupport@roofscape.com.ph</span>
                                         </div>
                                     </div>
                                 </div>
@@ -94,8 +98,9 @@ const Footer = () => (
                                             <i class="icofont-telephone"></i>
                                         </div>
                                         <div class="footer-contact-info-text">
-                                            <span>(264) 126-7545-9245</span>
-                                            <span>(054) 254-7494-6494</span>
+                                            <span>Phone #: 8-330-1703</span>
+                                            <span>Globe : 0956-4020638</span>
+                                            <span>Smart : 0908-8728870</span>
                                         </div>
                                     </div>
                                 </div>
@@ -121,20 +126,20 @@ const Footer = () => (
             <div class="footer-bottom-sec">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4 col-sm-4">
-                            <div class="copy-right">
+                        {/* <div class="col-md-4 col-sm-4"> */}
+                            <div class="copy-right" style={{ textAlign: "center" }}>
                                 <span>&copy; 2019 Roofscape Enterprise. All Right Reserved </span>
                             </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4">
+                        {/* </div> */}
+                        {/* <div class="col-md-4 col-sm-4">
                             <div class="footer-logo">
                                 <a href="/"><img src="img/logo.jpg" alt="" /></a>
                             </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4">
+                        </div> */}
+                        {/* <div class="col-md-4 col-sm-4">
                             <div class="site-developer">
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

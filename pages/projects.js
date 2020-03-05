@@ -6,42 +6,42 @@ import Pixel from './components/Pixel'
 const dataValues = [
     {
         type: "Repair",
-        name: "Construction Repair Service",
+        name: "Tsiendesitas",
         img: "img/lp1.jpg"
     },
     {
         type: "Management",
-        name: "Construction Management",
+        name: "Bayleaf Hotel",
         img: "img/lp2.jpg"
     },
     {
         type: "Design",
-        name: "Architectural Design",
+        name: "UST Gymnasium",
         img: "img/lp3.jpg"
     },
     {
         type: "Stuff",
-        name: "Expert Mechanical",
+        name: "Zinnia Towers",
         img: "img/lp4.jpg"
     },
     {
         type: "Planning",
-        name: "House Planning",
+        name: "Mall of America",
         img: "img/lp5.jpg"
     },
     {
         type: "Welding",
-        name: "Repair welding",
+        name: "Canada",
         img: "img/lp6.jpg"
     },
     {
         type: "Repair",
-        name: "Construction Management",
+        name: "Building",
         img: "img/lp1.jpg"
     },
     {
         type: "Stuff",
-        name: "Appartment Management",
+        name: "Residential",
         img: "img/lp5.jpg"
     },
 ]

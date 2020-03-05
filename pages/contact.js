@@ -1,9 +1,11 @@
-import Head from 'next/head'
+import { useRouter } from 'next/router'
 import Header from "./components/header"
 import Footer from "./components/footer"
 import Pixel from './components/Pixel'
 
 function ContactPage() {
+    const router = useRouter()
+    const item = router.query.item
     return(
         <div>
             <Pixel name='FACEBOOK_PIXEL_1' />
@@ -21,7 +23,7 @@ function ContactPage() {
                                     <div class="page-breadcrumb">
                                         <div class="breadcrumb-list">
                                             <ul>
-                                                <li><a href="index.html">Home</a></li>
+                                                <li><a href="index">Home</a></li>
                                                 <li><a href="#">Contact Us</a></li>
                                             </ul>
                                         </div>
@@ -43,8 +45,9 @@ function ContactPage() {
                                         </div>
                                         <div class="contact-info-text">
                                             <h2>address</h2>
-                                            <span>3315 Counts Lane Wilmore, KY 40390 </span>
-                                            <span>Californiya , United State</span>
+                                            <span>ROOFSCAPE ENTERPRISE </span>
+                                            <span>1135 EDSA, Balintawak, Quezon City </span>
+                                            <span>Philippines</span>
                                         </div>
                                     </div>
                                 </div>
@@ -58,8 +61,11 @@ function ContactPage() {
                                         </div>
                                         <div class="contact-info-text">
                                             <h2>E-mail</h2>
-                                            <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6a03040c052a09050403121a180f191944090507">[email&#160;protected]</a></span>
-                                            <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1861776d6a75797174587f75797174367b7775">[email&#160;protected]</a></span>
+                                            {/* <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6a03040c052a09050403121a180f191944090507">roofscape@gmail.com.ph</a></span>
+                                            <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1861776d6a75797174587f75797174367b7775">customersupport@roofscape.com.ph</a></span> */}
+                                            <span>roofscape@roofscape.com.ph</span>
+                                            <span>customerinquiry@roofscape.com.ph</span>
+                                            <span>customersupport@roofscape.com.ph</span>
                                         </div>
                                     </div>
                                 </div>
@@ -73,8 +79,9 @@ function ContactPage() {
                                         </div>
                                         <div class="contact-info-text">
                                             <h2>office time</h2>
-                                            <span>Mon - Thu 9:00 am - 4.00 pm</span>
-                                            <span>Thu - Mon 10.00 pm - 5.00 pm</span>
+                                            <span>Mon - Fri 9:00 am - 4.00 pm</span>
+                                            <span>Sat - Sun 10.00 pm - 5.00 pm</span>
+                                            <span>Holidays 10.00 pm - 5.00 pm</span>
                                         </div>
                                     </div>
                                 </div>
@@ -108,7 +115,7 @@ function ContactPage() {
                                         </div>
                                         <div class="col-md-12 message-input">
                                             <div class="single-input-field">
-                                                <textarea placeholder="Write Your Message" name="message"></textarea>
+                                                <textarea name="message">{item ? `I want to inquire about this item ${item}. Get back to me as soon as possible.` : "Write your message/concerns here."}</textarea>
                                             </div>
                                         </div>
                                         <div class="single-input-fieldsbtn">
@@ -120,7 +127,7 @@ function ContactPage() {
 
                             <div class="col-md-4">
                                 <div class="contact-page-map">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d503103.25504622894!2d-118.94592338887756!3d34.065964560335836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2z4Kay4Ka4IOCmj-CmnuCnjeCmnOCnh-CmsuCnh-CmuCwg4KaV4KeN4Kav4Ka-4Kay4Ka_4Kar4KeL4Kaw4KeN4Kao4Ka_4Kav4Ka84Ka-LCDgpq7gpr7gprDgp43gppXgpr_gpqgg4Kav4KeB4KaV4KeN4Kak4Kaw4Ka-4Ka34KeN4Kaf4KeN4Kaw!5e0!3m2!1sbn!2sbd!4v1497798250780" width="100%" height="450" frameborder="0" style={{ border: 0 }} allowfullscreen></iframe>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15439.138251527887!2d120.9678464!3d14.6681641!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2cf3329f28498f67!2sRoofscape%20Enterprises!5e0!3m2!1sen!2sph!4v1583420831768!5m2!1sen!2sph" width="100%" height="450" frameborder="0" style={{ border: 0 }} allowfullscreen=""></iframe>
                                 </div>
                             </div>
                         </div>

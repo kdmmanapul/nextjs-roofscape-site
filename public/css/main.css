@@ -1592,7 +1592,8 @@ visibility:visible;bottom:0px;
 	background-attachment:fixed;
 }
 .call-to-action-overlay {
-	background-color: rgba(253, 164, 11, 0.95);
+	/* background-color: rgba(253, 164, 11, 0.95); */
+	background-color: #fcf8e3;
 	height: 100%;
 	left: 0;
 	position: absolute;
@@ -4281,6 +4282,10 @@ padding-top: 10px;
 	margin: 1rem 0 0 5rem;
 }
 
+.desktop-footer {
+	margin-left: 200 !important;
+}
+
 @media only screen and (max-width: 768px) {
 	/* For mobile phones: */
 	.img-warehouse {
@@ -4288,5 +4293,8 @@ padding-top: 10px;
 	}
 	.desktop-nav {
 		display: none;
+	}
+	.desktop-footer {
+		margin-left: 0
 	}
 }
