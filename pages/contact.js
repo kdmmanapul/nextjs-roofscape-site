@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Header from "./components/header"
 import Footer from "./components/footer"
-import Pixel from '../components/Pixel'
+import Pixel from './components/Pixel'
 
 function ContactPage() {
     return(

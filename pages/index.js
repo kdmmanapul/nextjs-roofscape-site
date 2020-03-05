@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import Pixel from '../components/Pixel'
+import Pixel from './components/Pixel'
 import Header from "./components/header"
 import Footer from "./components/footer"
 import HomePage from "./homepage"
