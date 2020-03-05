@@ -49,7 +49,11 @@ function Header() {
 
             <main>
             <header>
-
+                <div id="installContainer" class="hidden">
+                    <button id="butInstall" type="button">
+                        Install
+                    </button>
+                </div>
                 <div class="header-top">
                 <div class="container">
                     <div class="row">
