@@ -8,15 +8,15 @@ const servicesData = [
       img: "img/s3.jpg",
       icon: "icofont-vehicle-wrecking",
       title: "Primary Materials",
-      description: "Lorem ipsum dolor sit amet, lorem nibh lectus urna arcu, lorem erat semper.",
+      description: "We offer Primary Construction Materials like Cement, Wood, Steel.",
       type: "Primary Materials"
     },
     {
       img: "img/s3.jpg",
       icon: "icofont-architecture-alt",
-      title: "Other Materials",
-      description: "Lorem ipsum dolor sit amet, lorem nibh lectus urna arcu, lorem erat semper.",
-      type: "Other Materials"
+      title: "Secondary Materials",
+      description: "We offer construction tools like Nails, Glass, Light Bulbs.",
+      type: "Secondary Materials"
     },
 ]
 
@@ -52,35 +52,85 @@ function ServicePage() {
                 <div class="service-sec pt-100 pb-70 bg-light-gray">
                     <div class="container">
                         <div class="row">
-                            <div class="service-item">
-                                {
-                                    servicesData.map((o, idx) => 
-                                    <div class="col-md-6 col-sm-6 inner">
-                                        <div class="media">
-                                            <div class="service-thumb">
-                                                <a href={`service-details?type=${o.type}`}><img src={o.img} alt="" /></a>
-                                                <div class="service-icon"></div>
-                                            </div>
-                                            <div class="service-inner-text">
-                                                <div class="service-inner-content">
-                                                    <div class="media-left">
-                                                        <div class="service_icon">
-                                                            <i class={o.icon}></i>
+
+                            <div class="col-md-4">
+                                <div class="sidebar">
+                                    <div class="service-cat-widget">
+                                        <h2 class="widget-title">Service Category</h2>
+                                        <div class="dropdown">
+                                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style={{ width: 360, backgroundColor: "green" }}>
+                                                Primary Materials
+                                            <span class="caret"></span></button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="/service-details?type=Primary%20Materials">Nails</a></li>
+                                                <li><a href="/service-details?type=Primary%20Materials">Water</a></li>
+                                                <li><a href="/service-details?type=Primary%20Materials">Roof</a></li>
+                                                <li><a href="/service-details?type=Primary%20Materials">Water</a></li>
+                                                <li><a href="/service-details?type=Primary%20Materials">Roofing</a></li>
+                                                <li><a href="/service-details?type=Primary%20Materials">Water</a></li>
+                                                <li><a href="/service-details?type=Primary%20Materials">Roof</a></li>
+                                                <li><a href="/service-details?type=Primary%20Materials">Water</a></li>
+                                                <li><a href="/service-details?type=Primary%20Materials">Roofing</a></li>
+                                                <li><a href="/service-details?type=Primary%20Materials">Water</a></li>
+                                                <li><a href="/service-details?type=Primary%20Materials">Roof</a></li>
+                                                <li><a href="/service-details?type=Primary%20Materials">Water</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown" style={{ marginTop: 10 }}>
+                                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style={{ width: 360, backgroundColor: "green" }}>
+                                                Other Materials
+                                            <span class="caret"></span></button>
+                                            <ul class="dropdown-menu">
+                                            <li><a href="/service-details?type=Other%20Materials">Nails</a></li>
+                                                <li><a href="/service-details?type=Other%20Materials">Light</a></li>
+                                                <li><a href="/service-details?type=Other%20Materials">Roof</a></li>
+                                                <li><a href="/service-details?type=Other%20Materials">Light</a></li>
+                                                <li><a href="/service-details?type=Other%20Materials">Nails</a></li>
+                                                <li><a href="/service-details?type=Other%20Materials">Light</a></li>
+                                                <li><a href="/service-details?type=Other%20Materials">Roof</a></li>
+                                                <li><a href="/service-details?type=Other%20Materials">Light</a></li>
+                                                <li><a href="/service-details?type=Other%20Materials">Nails</a></li>
+                                                <li><a href="/service-details?type=Other%20Materials">Light</a></li>
+                                                <li><a href="/service-details?type=Other%20Materials">Roof</a></li>
+                                                <li><a href="/service-details?type=Other%20Materials">Light</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-8">
+                                <div class="service-item">
+                                    {
+                                        servicesData.map((o, idx) => 
+                                        <div class="col-md-6 col-sm-6 inner">
+                                            <div class="media">
+                                                <div class="service-thumb">
+                                                    <a href={`service-details?type=${o.type}`}><img src={o.img} alt="" /></a>
+                                                    <div class="service-icon"></div>
+                                                </div>
+                                                <div class="service-inner-text">
+                                                    <div class="service-inner-content">
+                                                        <div class="media-left">
+                                                            <div class="service_icon">
+                                                                <i class={o.icon}></i>
+                                                            </div>
                                                         </div>
+                                                        <div class="media-body">
+                                                            <h2><a href={`service-details?type=${o.type}`}>{o.title}</a></h2>
+                                                        </div>
+                                                        <p>{o.description}</p>
+                                                        <a href={`/service-category`} class="service-readmore">More Info<span class="lnr lnr-arrow-right"></span></a>
+                                                        {/* <a href={`service-details?type=${o.type}`} class="service-readmore">More Info<span class="lnr lnr-arrow-right"></span></a> */}
                                                     </div>
-                                                    <div class="media-body">
-                                                        <h2><a href={`service-details?type=${o.type}`}>{o.title}</a></h2>
-                                                    </div>
-                                                    <p>{o.description}</p>
-                                                    <a href={`/service-category`} class="service-readmore">More Info<span class="lnr lnr-arrow-right"></span></a>
-                                                    {/* <a href={`service-details?type=${o.type}`} class="service-readmore">More Info<span class="lnr lnr-arrow-right"></span></a> */}
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    )
-                                }
+                                        )
+                                    }
+                                </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
