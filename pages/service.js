@@ -72,8 +72,8 @@ function ServicePage() {
                                                         <h2><a href={`service-details?type=${o.type}`}>{o.title}</a></h2>
                                                     </div>
                                                     <p>{o.description}</p>
-                                                    {/* <a href={`service-details?type=${o.type}`} class="service-readmore">More Info<span class="lnr lnr-arrow-right"></span></a> */}
                                                     <a href={`/service-category`} class="service-readmore">More Info<span class="lnr lnr-arrow-right"></span></a>
+                                                    {/* <a href={`service-details?type=${o.type}`} class="service-readmore">More Info<span class="lnr lnr-arrow-right"></span></a> */}
                                                 </div>
                                             </div>
                                         </div>

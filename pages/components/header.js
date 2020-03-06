@@ -111,6 +111,33 @@ function Header() {
                             {/* <ul>
                                 <li><Link href="/service-details"><a>Service Details</a></Link></li>
                             </ul> */}
+                            <ul>
+                                <li><a href="/service-category">Primary Materials<i class="fa fa-angle-right"></i></a>
+                                    <ul>
+                                        <li><a href="service-details?Primary%20Materials">Roofing</a></li>
+                                        <li><a href="service-details?Primary%20Materials">Waterproofing</a></li>
+                                        <li><a href="service-details?Primary%20Materials">Roofing</a></li>
+                                        <li><a href="service-details?Primary%20Materials">Waterproofing</a></li>
+                                        <li><a href="service-details?Primary%20Materials">Roofing</a></li>
+                                        <li><a href="service-details?Primary%20Materials">Waterproofing</a></li>
+                                        <li><a href="service-details?Primary%20Materials">Roofing</a></li>
+                                        <li><a href="service-details?Primary%20Materials">Waterproofing</a></li>
+                                        <li><a href="service-details?Primary%20Materials">Roofing</a></li>
+                                        <li><a href="service-details?Primary%20Materials">Waterproofing</a></li>
+                                        <li><a href="service-details?Primary%20Materials">Roofing</a></li>
+                                        <li><a href="service-details?Primary%20Materials">Waterproofing</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/service-category">Other Materials<i class="fa fa-angle-right"></i></a>
+                                    <ul>
+                                        <li><a href="service-details?Other%20Materials">Other Materials</a></li>
+                                        <li><a href="service-details?Other%20Materials">Other Materials</a></li>
+                                        <li><a href="service-details?Other%20Materials">Other Materials</a></li>
+                                        <li><a href="service-details?Other%20Materials">Other Materials</a></li>
+                                        <li><a href="service-details?Other%20Materials">Other Materials</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                             </li>
                             <li class={router.pathname === "/projects" || router.pathname === "project-details" ? "active" : null}><Link href="/projects"><a>Project</a></Link>
                             {/* <ul>
