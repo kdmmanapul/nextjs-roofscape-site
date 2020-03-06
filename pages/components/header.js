@@ -62,7 +62,7 @@ function Header() {
                     <div class="col-md-6 col-sm-8">
                         <div class="header-bar-inner">
                         <div class="header-left">
-                            <span class="contact-tp-title">Guaranteed No LEAK </span>
+                            <span class="contact-tp-title">ROOFING	&bull; WATERPROOFING &bull; GENERAL CONSTRUCTION </span>
                         {/* <ul> */}
                             {/* <li><i class="icofont-telephone"></i>+8-330-1703</li> */}
                             {/* <li><i class="icofont-email"></i><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d3babdb5bc93b0bcbdbaaba3a1b6a0a0fdb0bcbe">[email&#160;protected]</a></li> */}

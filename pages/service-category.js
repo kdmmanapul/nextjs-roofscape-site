@@ -108,8 +108,9 @@ function ServiceCategoryPage() {
                                     <div class="page-breadcrumb">
                                         <div class="breadcrumb-list">
                                             <ul>
-                                                <li><a href="index">Home</a></li>
-                                                <li><a href="#">Services</a></li>
+                                                <li><a href="/">Home</a></li>
+                                                <li><a href="/service">Services</a></li>
+                                                <li><a href="#">Primary Materials</a></li>
                                             </ul>
                                         </div>
                                     </div>

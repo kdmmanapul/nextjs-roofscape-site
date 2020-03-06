@@ -89,9 +89,10 @@ function ServiceDetailsPage() {
                                     <div class="page-breadcrumb">
                                         <div class="breadcrumb-list">
                                             <ul>
-                                                <li><a href="index">Home</a></li>
-                                                <li><a href="service">Services</a></li>
-                                                <li><a href="#">Service Details</a></li>
+                                                <li><a href="/">Home</a></li>
+                                                <li><a href="/service">Services</a></li>
+                                                <li><a href="/service-category">Primary Materials</a></li>
+                                                <li><a href="#">Roofing</a></li>
                                             </ul>
                                         </div>
                                     </div>
