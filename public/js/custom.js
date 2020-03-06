@@ -257,6 +257,7 @@ $(document).ready(function(){
 		// 	animation: 'fade'
 		// });	
 		/*
+		
 		Counter Js
 		============================*/ 
         $('.counter').counterUp({
