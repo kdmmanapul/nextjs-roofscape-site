@@ -7,21 +7,21 @@ const dataValues = [
         name: "Regina Rosarii, the Pilgrim’s Place",
         product: "Owens Corning Oak 30",
         place: "Tanay, Rizal",
-        img: "img/lp1.jpg",
+        img: "img/p1.jpg",
     },
     {
         type: "Tiendesitas",
         name: "Tiendesitas Redevelopment",
         product: "Owens Corning Oak 30",
         place: "Frontera Verde, Brgy. Ugong, Pasig City",
-        img: "img/lp2.jpg"
+        img: "img/p2.jpg"
     },
     {
         type: "BayleafHotel",
         name: "Lyceum of the Philippines Bayleaf Hotel Manila",
         product: "Stone Coated Roof Tiles",
         place: "Instramuros Manila",
-        img: "img/lp3.jpg"
+        img: "img/p3.jpg"
     },
 ]
 
