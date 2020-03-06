@@ -148,12 +148,6 @@ function Header() {
 export default Header
 
 // 2nd HEADER BACKUP
-
-import Head from 'next/head'
-import { useRouter } from 'next/router'
-import Link from 'next/link';
-import MessengerCustomerChat from 'react-messenger-customer-chat';
-
 function Header() {
     const router = useRouter()
 
