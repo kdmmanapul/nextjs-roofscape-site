@@ -5,44 +5,25 @@ import Pixel from './components/Pixel'
 
 const dataValues = [
     {
-        type: "Repair",
-        name: "Tsiendesitas",
-        img: "img/lp1.jpg"
+        type: "ReginaRosaril",
+        name: "Regina Rosarii, the Pilgrim’s Place",
+        product: "Owens Corning Oak 30",
+        place: "Tanay, Rizal",
+        img: "img/lp1.jpg",
     },
     {
-        type: "Management",
-        name: "Bayleaf Hotel",
+        type: "Tiendesitas",
+        name: "Tiendesitas Redevelopment",
+        product: "Owens Corning Oak 30",
+        place: "Frontera Verde, Brgy. Ugong, Pasig City",
         img: "img/lp2.jpg"
     },
     {
-        type: "Design",
-        name: "UST Gymnasium",
+        type: "BayleafHotel",
+        name: "Lyceum of the Philippines Bayleaf Hotel Manila",
+        product: "Stone Coated Roof Tiles",
+        place: "Instramuros Manila",
         img: "img/lp3.jpg"
-    },
-    {
-        type: "Stuff",
-        name: "Zinnia Towers",
-        img: "img/lp4.jpg"
-    },
-    {
-        type: "Planning",
-        name: "Mall of America",
-        img: "img/lp5.jpg"
-    },
-    {
-        type: "Welding",
-        name: "Canada",
-        img: "img/lp6.jpg"
-    },
-    {
-        type: "Repair",
-        name: "Building",
-        img: "img/lp1.jpg"
-    },
-    {
-        type: "Stuff",
-        name: "Residential",
-        img: "img/lp5.jpg"
     },
 ]
 
@@ -103,7 +84,7 @@ function ServicePage() {
                                 <div class="gallery-container">
                                     {
                                         dataValues.map((o, idx) => {
-                                            return <div class="col-xs-12 col-sm-6 col-md-3 filtr-item Management">
+                                            return <div class="col-xs-12 col-sm-6 col-md-4 filtr-item Management">
                                                 <div class="latest-project-inner">
                                                     <div class="latest-project-inner-img">
                                                         <img src={o.img} alt="" />
@@ -117,8 +98,8 @@ function ServicePage() {
                                                         </div>
                                                         <div class="latest-project-inner-desc">
                                                             <div class="latest-project-inner-text">
-                                                                <span>{o.type}</span>
-                                                                <h2><a href={`project-details?projectName=${o.name}`}>{o.name} </a></h2>
+                                                                {/* <span>{o.type}</span> */}
+                                                                <h2><a href={`project-details?projectName=${o.name}&product=${o.product}&place=${o.place}`}>{o.name} </a></h2>
                                                             </div>
                                                         </div>
                                                     </div>

@@ -250,12 +250,12 @@ $(document).ready(function(){
 		/*
 		scrollUp
 		============================*/	
-		$.scrollUp({
-			scrollText: '<span class="lnr lnr-arrow-up"></span>',
-			easingType: 'linear',
-			scrollSpeed: 900,
-			animation: 'fade'
-		});	
+		// $.scrollUp({
+		// 	scrollText: '<span class="lnr lnr-arrow-up"></span>',
+		// 	easingType: 'linear',
+		// 	scrollSpeed: 900,
+		// 	animation: 'fade'
+		// });	
 		/*
 		Counter Js
 		============================*/ 

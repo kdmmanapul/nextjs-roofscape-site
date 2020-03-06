@@ -1,46 +1,27 @@
 import Head from 'next/head'
-
+import Link from 'next/link';
 
 const dataValues = [
     {
-        type: "Repair",
-        name: "Construction Repair Service",
+        type: "ReginaRosaril",
+        name: "Regina Rosarii, the Pilgrim’s Place",
+        product: "Owens Corning Oak 30",
+        place: "Tanay, Rizal",
         img: "img/lp1.jpg",
     },
     {
-        type: "Management",
-        name: "Construction Management",
+        type: "Tiendesitas",
+        name: "Tiendesitas Redevelopment",
+        product: "Owens Corning Oak 30",
+        place: "Frontera Verde, Brgy. Ugong, Pasig City",
         img: "img/lp2.jpg"
     },
     {
-        type: "Design",
-        name: "Architectural Design",
+        type: "BayleafHotel",
+        name: "Lyceum of the Philippines Bayleaf Hotel Manila",
+        product: "Stone Coated Roof Tiles",
+        place: "Instramuros Manila",
         img: "img/lp3.jpg"
-    },
-    {
-        type: "Stuff",
-        name: "Expert Mechanical",
-        img: "img/lp4.jpg"
-    },
-    {
-        type: "Planning",
-        name: "House Planning",
-        img: "img/lp5.jpg"
-    },
-    {
-        type: "Welding",
-        name: "Repair welding",
-        img: "img/lp6.jpg"
-    },
-    {
-        type: "Repair",
-        name: "Construction Management",
-        img: "img/lp1.jpg"
-    },
-    {
-        type: "Stuff",
-        name: "Appartment Management",
-        img: "img/lp5.jpg"
     },
 ]
 
@@ -135,7 +116,7 @@ const HomePage = () => (
                                             <h2><a href="service-details?type=Roofing">Various <span>Roofing Materials</span></a></h2>
                                         </div>
                                         <p>We offer various roofing materials that can guarantee quality.</p>
-                                        <a href="service-details?type=Roofing" class="service-readmore">Read More <span class="lnr lnr-arrow-right"></span></a>
+                                        {/* <a href="service-details?type=Roofing" class="service-readmore">Read More <span class="lnr lnr-arrow-right"></span></a> */}
                                     </div>
                                 </div>
                             </div>
@@ -159,7 +140,7 @@ const HomePage = () => (
                                             <h2><a href="service-details?type=Waterproofing"> <span>Waterproofing Materials</span></a></h2>
                                         </div>
                                         <p>We offer a variety of waterproofing materials that are high in quality.</p>
-                                        <a href="service-details?type=Waterproofing" class="service-readmore">Read More <span class="lnr lnr-arrow-right"></span></a>
+                                        {/* <a href="service-details?type=Waterproofing" class="service-readmore">Read More <span class="lnr lnr-arrow-right"></span></a> */}
                                     </div>
                                 </div>
                             </div>
@@ -168,61 +149,7 @@ const HomePage = () => (
                         <div class="col-md-4 col-sm-6 inner">
                             <div class="media">
                                 <div class="service-thumb">
-                                    <a href="service-details?type=GenConstruction"><img src="img/s3.jpg" alt="" /></a>
-                                    <div class="service-icon"></div>
-                                </div>
-
-                                <div class="service-inner-text">
-                                    <div class="service-inner-content">
-                                        <div class="media-left">
-                                            <div class="service_icon">
-                                                <i class="icofont-worker"></i>
-                                            </div>
-                                        </div>
-                                        <div class="media-body">
-                                            <h2><a href="service-details?type=GenConstruction"><span>General Construction</span></a></h2>
-                                        </div>
-                                        <p>We offer general construction.</p>
-                                        <a href="service-details?type=GenConstruction" class="service-readmore">Read More <span class="lnr lnr-arrow-right"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="service-item">
-
-                        <div class="col-md-4 col-sm-6 inner">
-                            <div class="media">
-                                <div class="service-thumb">
-                                    <a href="service-details?type=GenConstruction"><img src="img/s1.jpg" alt="" /></a>
-                                    <div class="service-icon"></div>
-                                </div>
-                                
-                                <div class="service-inner-text">
-                                    <div class="service-inner-content">
-                                        <div class="media-left">
-                                            <div class="service_icon">
-                                                <i class="icofont-architecture-alt"></i>
-                                            </div>
-                                        </div>
-                                        <div class="media-body">
-                                            <h2><a href="service-details?type=GenConstruction">Various <span>Roofing Materials</span></a></h2>
-                                        </div>
-                                        <p>We offer various roofing materials that can guarantee quality.</p>
-                                        <a href="service-details?type=GenConstruction" class="service-readmore">Read More <span class="lnr lnr-arrow-right"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-6 inner">
-                            <div class="media">
-                                <div class="service-thumb">
-                                    <a href="service-details?type=Roofing"><img src="img/s2.jpg" alt="" /></a>
+                                    <a href="service-details?type=Waterproofing"><img src="img/s2.jpg" alt="" /></a>
                                     <div class="service-icon"></div>
                                 </div>
 
@@ -234,40 +161,25 @@ const HomePage = () => (
                                             </div>
                                         </div>
                                         <div class="media-body">
-                                            <h2><a href="service-details?type=Roofing"> <span>Waterproofing Materials</span></a></h2>
+                                            <h2><a href="service-details?type=Waterproofing"> <span>General Construction</span></a></h2>
                                         </div>
                                         <p>We offer a variety of waterproofing materials that are high in quality.</p>
-                                        <a href="service-details?type=Roofing" class="service-readmore">Read More <span class="lnr lnr-arrow-right"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-6 inner">
-                            <div class="media">
-                                <div class="service-thumb">
-                                    <a href="service-details?type=Roofing"><img src="img/s3.jpg" alt="" /></a>
-                                    <div class="service-icon"></div>
-                                </div>
-
-                                <div class="service-inner-text">
-                                    <div class="service-inner-content">
-                                        <div class="media-left">
-                                            <div class="service_icon">
-                                                <i class="icofont-worker"></i>
-                                            </div>
-                                        </div>
-                                        <div class="media-body">
-                                            <h2><a href="service-details?type=Roofing"><span>General Construction</span></a></h2>
-                                        </div>
-                                        <p>We offer general construction.</p>
-                                        <a href="service-details?type=Roofing" class="service-readmore">Read More <span class="lnr lnr-arrow-right"></span></a>
+                                        {/* <a href="service-details?type=Waterproofing" class="service-readmore">Read More <span class="lnr lnr-arrow-right"></span></a> */}
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                     </div>
+                    <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="gallery-load-more-btn">
+                                        <a href="/service"> View More Services <i class="icofont-thin-double-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
 		</div>
@@ -277,7 +189,7 @@ const HomePage = () => (
             <div class="container">
                 <div class="row">
                     {/* <div class="col-md-6 col-sm-12 col-xs-12"> */}
-                        <div class="video-inner" style={{ marginBottom: "150px" }}>
+                        <div class="video-inner" style={{ marginBottom: "150px", }}>
                             {/* <video width="1024" controls>
                                 <source src="https://streamable.com/zhemx" type="video/mp4"/>
                                 Your browser does not support HTML5 video.
@@ -290,7 +202,7 @@ const HomePage = () => (
                         <div class="why-choose-v1">
                             <div class="why-choose-v1-title" style={{ marginLeft: 10 }}>
                                 <span>Why Choose Us</span>
-                                <h1>Why Trust Our Client</h1>
+                                <h1>Our Competitive Advantages</h1>
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
                             <div class="why-choose-v1-single">
@@ -310,8 +222,8 @@ const HomePage = () => (
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="why-choose-v1-single">
+                            
+                            <div class="why-choose-v1-single" style={{ marginTop: '50px'}}>
                                 <div class="media">
                                     <div class="media-left">
                                         <div class="icon">
@@ -386,7 +298,7 @@ const HomePage = () => (
                                 </div>
                             </div>
 
-                            <div class="why-choose-v1-single">
+                            <div class="why-choose-v1-single" style={{ marginTop: '70px'}}>
                                 <div class="media">
                                     <div class="media-left">
                                         <div class="icon">
@@ -447,7 +359,7 @@ const HomePage = () => (
                         <div class="gallery-container">
                             {
                                 dataValues.map((o) => {
-                                    return <div class="col-xs-12 col-sm-6 col-md-3 filtr-item architecture">
+                                    return <div class="col-xs-12 col-sm-6 col-md-4 filtr-item architecture">
                                         <div class="gallery-item">
                                             <img src={o.img} alt="" />
                                             <div class="gallery-overlay">
@@ -455,7 +367,7 @@ const HomePage = () => (
                                                     <h2><a href="#">{o.name}</a></h2>
                                                     <span class="gallery-button">
                                                     {/* <a href={o.img} class="gallery-photo"><i class="icofont-image"></i></a> */}
-                                                    <a href={`project-details?projectName=${o.name}`}><i class="icofont-external-link"></i></a>
+                                                    <Link href={`project-details?projectName=${o.name}&product=${o.product}&place=${o.place}`}><a><i class="icofont-external-link"></i></a></Link>
                                                     </span>
                                                 </div>
                                             </div>
@@ -465,22 +377,22 @@ const HomePage = () => (
                             }
                         </div>
 
-                        {/* <div class="container">
+                        <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="gallery-load-more-btn">
-                                        <a href="#"><i class="icofont-plus"></i> View More Gallery <i class="icofont-thin-double-right"></i></a>
+                                        <a href="/projects">View More Projects <i class="icofont-thin-double-right"></i></a>
                                     </div>
                                 </div>
                             </div>
-                        </div> */}
+                        </div>
 
                     </div>
                 </div>
             </div>
 		</div>
 
-		<div class="call-to-action-sec">
+		{/* <div class="call-to-action-sec">
             <div class="call-to-action-overlay"></div>
             <div class="container">
                 <div class="row">
@@ -499,7 +411,7 @@ const HomePage = () => (
                     </div>
                 </div>
             </div>
-		</div>
+		</div> */}
       </main>
   </div>
 )

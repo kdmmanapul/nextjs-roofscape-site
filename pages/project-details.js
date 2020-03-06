@@ -7,6 +7,8 @@ import Pixel from './components/Pixel'
 function ServicePage() {
     const router = useRouter();
     const projectName = router.query.projectName;
+    const product = router.query.product;
+    const place = router.query.place;
     return(
         <div>
             <Pixel name='FACEBOOK_PIXEL_1' />
@@ -66,8 +68,8 @@ function ServicePage() {
                                             <li>Project Name:<span>{projectName}</span></li>
                                             {/* <li>Starting Date:<span>21/01/2019</span></li>
                                             <li>Ending Date:<span>14/03/2019</span></li> */}
-                                            <li>Duration:<span>2 Month</span></li>
-                                            <li>Category:<span>Design</span></li>
+                                            <li>Product:<span>{product}</span></li>
+                                            <li>Place:<span>{place}</span></li>
                                             <li>Rating:
                                                 <span class="client-rating">
                                                     <i class="icofont-star"></i>
