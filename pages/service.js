@@ -54,7 +54,7 @@ function ServicePage() {
                         <div class="row">
 
                             <div class="col-md-4">
-                                <div class="sidebar">
+                                {/* <div class="sidebar">
                                     <div class="service-cat-widget">
                                         <h2 class="widget-title">Service Category</h2>
                                         <div class="dropdown">
@@ -95,6 +95,41 @@ function ServicePage() {
                                                 <li><a href="/service-details?type=Other%20Materials">Light</a></li>
                                             </ul>
                                         </div>
+                                    </div>
+                                </div> */}
+                                <div class="sidebar">
+                                    <div class="service-cat-widget">
+                                        <h2 class="widget-title">Service Category</h2>
+                                        <ul>
+                                            <li><a style={{ backgroundColor:"#071c34", color: "#fda40b" }} href={`service-details?type=Primary%20Materials`}>Primary</a></li>
+                                            <div style={{ height: "200px", overflowX: "hidden", overflowX: "auto" }}>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Roof</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Water</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Roof</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Roof</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Water</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Roof</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Roof</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Water</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Roof</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Roof</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Water</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Roof</a></li>
+                                            </div>
+                                            <li><a style={{ backgroundColor:"#071c34", color: "#fda40b" }} href={`service-details?type=Other%20Materials`}>Secondary</a></li>
+                                            <div style={{ height: "200px", overflowX: "hidden", overflowX: "auto" }}>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Nails</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Light</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Nails</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Light</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Nails</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Light</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Nails</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Light</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Nails</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Light</a></li>
+                                            </div>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>

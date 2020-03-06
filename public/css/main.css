@@ -3003,7 +3003,7 @@ overflow:hidden;
   margin-top: 20px;
 }
 
-.sidebar ul li a{font-size: 16px;
+.sidebar ul li a{font-size: 12px;
 font-weight: normal;
 text-transform: capitalize;
 transition: all 0.4s ease-in-out 0s;}
