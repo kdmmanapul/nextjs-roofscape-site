@@ -104,41 +104,19 @@ function ServiceDetailsPage() {
                 <div class="service-details-page pt-100 pb-100">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-4">
+                            {/* <div class="col-md-4">
                                 <div class="sidebar">
                                     <div class="service-cat-widget">
                                         <h2 class="widget-title">Service Category</h2>
                                         <ul>
                                             <li><a href={`service-details?type=Primary%20Materials`}>Primary</a></li>
                                             <li><a href={`service-details?type=Other%20Materials`}>Secondary</a></li>
-                                            {/* <li><a href={`service-details?type=Waterproofing`}>Waterproofing</a></li>
-                                            <li><a href={`service-details?type=GenConstruction`}>General Construction</a></li>
-                                            <li><a href={`service-details?type=Importation`}>Importation of Materials</a></li>
-                                            <li><a href={`service-details?type=FinishingMaterials`}>Direct Supplier of Finishing Materials</a></li> */}
                                         </ul>
                                     </div>
-
-                                    {/* <div class="brochures-widget">
-                                        <h2 class="widget-title">Brochure</h2>
-                                        <ul>
-                                            <li><a href="#">Download.Pdf<span><i class="icofont-download-alt"></i></span></a></li>
-                                            <li><a href="#">Download.Doc<span><i class="icofont-download-alt"></i></span></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="discount-widget">
-                                        <img src="img/cal-img.jpg" alt=""/>
-                                        <div class="discount-widget-overlay">
-                                            <div class="discount-widget-wrapper">
-                                                <span>50 % offer</span>
-                                                <h2>This month</h2>
-                                                <a href="#">get Service now</a>
-                                            </div>
-                                        </div>
-                                    </div> */}
                                 </div>
-                            </div>
+                            </div> */}
                             
-                            <div class="col-md-8">
+                            {/* <div class="col-md-8"> */}
                                 <div class="service-details">
                                     <div class="row">
                                         <div class="col-md-12">
@@ -190,7 +168,7 @@ function ServiceDetailsPage() {
                                         }
                                     </div>
                                 </div>
-                            </div>
+                            {/* </div> */}
                         </div>
                     </div>
                 </div>     

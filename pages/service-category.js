@@ -18,9 +18,79 @@ const servicesData = [
       description: "Lorem ipsum dolor sit amet, lorem nibh lectus urna arcu, lorem erat semper.",
       type: "Other Materials"
     },
+    {
+      img: "img/s3.jpg",
+      icon: "icofont-vehicle-wrecking",
+      title: "Primary Materials",
+      description: "Lorem ipsum dolor sit amet, lorem nibh lectus urna arcu, lorem erat semper.",
+      type: "Primary Materials"
+    },
+    {
+      img: "img/s3.jpg",
+      icon: "icofont-architecture-alt",
+      title: "Other Materials",
+      description: "Lorem ipsum dolor sit amet, lorem nibh lectus urna arcu, lorem erat semper.",
+      type: "Other Materials"
+    },
+    {
+      img: "img/s3.jpg",
+      icon: "icofont-vehicle-wrecking",
+      title: "Primary Materials",
+      description: "Lorem ipsum dolor sit amet, lorem nibh lectus urna arcu, lorem erat semper.",
+      type: "Primary Materials"
+    },
+    {
+      img: "img/s3.jpg",
+      icon: "icofont-architecture-alt",
+      title: "Other Materials",
+      description: "Lorem ipsum dolor sit amet, lorem nibh lectus urna arcu, lorem erat semper.",
+      type: "Other Materials"
+    },
+    {
+      img: "img/s3.jpg",
+      icon: "icofont-vehicle-wrecking",
+      title: "Primary Materials",
+      description: "Lorem ipsum dolor sit amet, lorem nibh lectus urna arcu, lorem erat semper.",
+      type: "Primary Materials"
+    },
+    {
+      img: "img/s3.jpg",
+      icon: "icofont-architecture-alt",
+      title: "Other Materials",
+      description: "Lorem ipsum dolor sit amet, lorem nibh lectus urna arcu, lorem erat semper.",
+      type: "Other Materials"
+    },
+    {
+      img: "img/s3.jpg",
+      icon: "icofont-vehicle-wrecking",
+      title: "Primary Materials",
+      description: "Lorem ipsum dolor sit amet, lorem nibh lectus urna arcu, lorem erat semper.",
+      type: "Primary Materials"
+    },
+    {
+      img: "img/s3.jpg",
+      icon: "icofont-architecture-alt",
+      title: "Other Materials",
+      description: "Lorem ipsum dolor sit amet, lorem nibh lectus urna arcu, lorem erat semper.",
+      type: "Other Materials"
+    },
+    {
+      img: "img/s3.jpg",
+      icon: "icofont-vehicle-wrecking",
+      title: "Primary Materials",
+      description: "Lorem ipsum dolor sit amet, lorem nibh lectus urna arcu, lorem erat semper.",
+      type: "Primary Materials"
+    },
+    {
+      img: "img/s3.jpg",
+      icon: "icofont-architecture-alt",
+      title: "Other Materials",
+      description: "Lorem ipsum dolor sit amet, lorem nibh lectus urna arcu, lorem erat semper.",
+      type: "Other Materials"
+    },
 ]
 
-function ServicePage() {
+function ServiceCategoryPage() {
     return(
         <div>
             <Pixel name='FACEBOOK_PIXEL_1' />
@@ -55,7 +125,7 @@ function ServicePage() {
                             <div class="service-item">
                                 {
                                     servicesData.map((o, idx) => 
-                                    <div class="col-md-6 col-sm-6 inner">
+                                    <div class="col-md-4 col-sm-6 inner">
                                         <div class="media">
                                             <div class="service-thumb">
                                                 <a href={`service-details?type=${o.type}`}><img src={o.img} alt="" /></a>
@@ -72,8 +142,7 @@ function ServicePage() {
                                                         <h2><a href={`service-details?type=${o.type}`}>{o.title}</a></h2>
                                                     </div>
                                                     <p>{o.description}</p>
-                                                    {/* <a href={`service-details?type=${o.type}`} class="service-readmore">More Info<span class="lnr lnr-arrow-right"></span></a> */}
-                                                    <a href={`/service-category`} class="service-readmore">More Info<span class="lnr lnr-arrow-right"></span></a>
+                                                    <a href={`service-details?type=${o.type}`} class="service-readmore">Read More <span class="lnr lnr-arrow-right"></span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -90,4 +159,4 @@ function ServicePage() {
     )
 }
 
-export default ServicePage
+export default ServiceCategoryPage
