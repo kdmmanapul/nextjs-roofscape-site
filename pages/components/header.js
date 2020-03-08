@@ -111,7 +111,7 @@ function Header() {
                             {/* <ul>
                                 <li><Link href="/service-details"><a>Service Details</a></Link></li>
                             </ul> */}
-                            <ul>
+                            {/* <ul>
                                 <li><a href="/service-category">Primary Materials<i class="fa fa-angle-right"></i></a>
                                     <ul>
                                         <li><a href="service-details?Primary%20Materials">Roofing</a></li>
@@ -137,7 +137,7 @@ function Header() {
                                         <li><a href="service-details?Other%20Materials">Other Materials</a></li>
                                     </ul>
                                 </li>
-                            </ul>
+                            </ul> */}
                             </li>
                             <li class={router.pathname === "/projects" || router.pathname === "project-details" ? "active" : null}><Link href="/projects"><a>Project</a></Link>
                             {/* <ul>
@@ -167,6 +167,7 @@ function Header() {
             <MessengerCustomerChat
                 themeColor="#0084FF"
                 pageId={2071208729806750}
+                onCustomerChatDialogShow={true}
             />
         </div>
     )

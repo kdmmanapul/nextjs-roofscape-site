@@ -72,6 +72,7 @@ const servicesCategoryData = [
 function ServiceDetailsPage() {
     const router = useRouter()
     const typeOfService = router.query.type
+    const productName = router.query.product
     return(
         <div>
             <Pixel name='FACEBOOK_PIXEL_1' />
@@ -91,8 +92,8 @@ function ServiceDetailsPage() {
                                             <ul>
                                                 <li><a href="/">Home</a></li>
                                                 <li><a href="/service">Services</a></li>
-                                                <li><a href="/service-category">Primary Materials</a></li>
-                                                <li><a href="#">Roofing</a></li>
+                                                <li><a href={`/service-category?type=${typeOfService}`}>{typeOfService}</a></li>
+                                                <li><a href="#">{productName}</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -121,12 +122,12 @@ function ServiceDetailsPage() {
                                 <div class="service-details">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <h2>{typeOfService}</h2>
+                                            <h2>{productName}</h2>
                                             <p>in vis doctus consetetur definitionem, cu his vidit feugait recusabo. Duo dicat splendide in. Nobis fuisset ex pri. Pro mucius eruditi accumsan an. In qui minim ridens, mel sint nostrud ea.</p>
                                         </div>
                                         {
                                             servicesCategoryData.map((o, idx) => 
-                                            <div class="col-md-4">
+                                            <div class="col-md-3">
                                                 <div class="faq-single">
                                                     <button type="button" data-toggle="modal" data-target={`#${o.type}`}>
                                                         <div class="gallery-item">

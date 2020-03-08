@@ -79,9 +79,9 @@ function ContactPage() {
                                         </div>
                                         <div class="contact-info-text">
                                             <h2>office time</h2>
-                                            <span>Mon - Fri 9:00 am - 4.00 pm</span>
-                                            <span>Sat - Sun 10.00 pm - 5.00 pm</span>
-                                            <span>Holidays 10.00 pm - 5.00 pm</span>
+                                            <span>Mon - Fri 8:00 am - 5:00 pm</span>
+                                            <span>Saturday 8:00 pm - 12:00 nn</span>
+                                            <span></span>
                                         </div>
                                     </div>
                                 </div>
@@ -127,7 +127,7 @@ function ContactPage() {
 
                             <div class="col-md-4">
                                 <div class="contact-page-map">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15439.138251527887!2d120.9678464!3d14.6681641!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2cf3329f28498f67!2sRoofscape%20Enterprises!5e0!3m2!1sen!2sph!4v1583420831768!5m2!1sen!2sph" width="100%" height="450" frameborder="0" style={{ border: 0 }} allowfullscreen=""></iframe>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15439.915382078583!2d121.008899!3d14.657142!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5ec4c3835cb11144!2sRoofscape!5e0!3m2!1sen!2sph!4v1583492958868!5m2!1sen!2sph" width="100%" height="450" frameborder="0" style={{ border: 0 }} allowfullscreen=""></iframe>
                                 </div>
                             </div>
                         </div>

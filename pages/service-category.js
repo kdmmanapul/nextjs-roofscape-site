@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import { useRouter } from 'next/router'
 import Header from "./components/header"
 import Footer from "./components/footer"
 import Pixel from './components/Pixel'
@@ -91,6 +91,8 @@ const servicesData = [
 ]
 
 function ServiceCategoryPage() {
+    const router = useRouter()
+    const typeOfService = router.query.type
     return(
         <div>
             <Pixel name='FACEBOOK_PIXEL_1' />
@@ -102,7 +104,7 @@ function ServiceCategoryPage() {
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="page-heading">
-                                <h1>Services</h1>
+                                <h1>{typeOfService}</h1>
                                 </div>
                                 <div class="page-breadcrumb-inner">
                                     <div class="page-breadcrumb">
@@ -110,7 +112,7 @@ function ServiceCategoryPage() {
                                             <ul>
                                                 <li><a href="/">Home</a></li>
                                                 <li><a href="/service">Services</a></li>
-                                                <li><a href="#">Primary Materials</a></li>
+                                                <li><a href="#">{typeOfService}</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -143,7 +145,7 @@ function ServiceCategoryPage() {
                                                         <h2><a href={`service-details?type=${o.type}`}>{o.title}</a></h2>
                                                     </div>
                                                     <p>{o.description}</p>
-                                                    <a href={`service-details?type=${o.type}`} class="service-readmore">Read More <span class="lnr lnr-arrow-right"></span></a>
+                                                    <a href={`service-details?type=${o.type}&product=${o.title}`} class="service-readmore">Read More <span class="lnr lnr-arrow-right"></span></a>
                                                 </div>
                                             </div>
                                         </div>

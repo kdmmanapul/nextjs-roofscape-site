@@ -14,9 +14,96 @@ const servicesData = [
     {
       img: "img/s3.jpg",
       icon: "icofont-architecture-alt",
-      title: "Secondary Materials",
+      title: "Other Materials",
       description: "We offer construction tools like Nails, Glass, Light Bulbs.",
-      type: "Secondary Materials"
+      type: "Other Materials"
+    },
+]
+
+const primaryMaterialsData = [
+    {
+        name: "AGM Asphalt Roof Shingles",
+    },
+    {
+        name: "Nuoran Stone Coated Metal Roof Tiles",
+    },
+    {
+        name: "Quick and Click PVC Ceiling & Wall Panels",
+    },
+    {
+        name: "Elephant Clay Roofing Tiles",
+    },
+    {
+        name: "Shinto Clay Roof Tiles",
+    },
+    {
+        name: "AGM Waterproofing Membrane",
+    },
+    {
+        name: "Other AGM Products",
+    },
+    {
+        name: "Buttered Clay Roofing Tiles",
+    },
+    {
+        name: "Butterfly Floor Tiles and Pavery",
+    },
+    {
+        name: "Ply Other Products",
+    },
+]
+
+const otherMaterialsData = [
+    {
+        name: "Concrete Aggregates",
+    },
+    {
+        name: "Gypsum Ceiling and Wall Boards",
+    },
+    {
+        name: "Smartboard Fiber Cement",
+    },
+    {
+        name: "SCG Concrete Roof Tiles",
+    },
+    {
+        name: "Ultraman Waterproofing Materials and Accessories",
+    },
+    {
+        name: "Polycarbonate Sheets",
+    },
+    {
+        name: "Light Metal Frames",
+    },
+    {
+        name: "Columbia Electrical Wires",
+    },
+    {
+        name: "Omni Lighting and Electrical Supplies",
+    },
+    {
+        name: "Royu Lighting and Electrical Supplies",
+    },
+    {
+        name: "Cement",
+    },
+    {
+        name: "Deformed Rebar",
+    },
+    {
+        name: "Locksets",
+    },
+    {
+        name: "Plywoods and Phenolic Board",
+    },
+    {
+        name: "Hardware and Finishing Materials",
+    },
+    {
+        name: "Nippon Paint",
+    },
+    {
+        name: "Insulation",
     },
 ]
 
@@ -101,33 +188,31 @@ function ServicePage() {
                                     <div class="service-cat-widget">
                                         <h2 class="widget-title">Service Category</h2>
                                         <ul>
-                                            <li><a style={{ backgroundColor:"#071c34", color: "#fda40b" }} href={`service-details?type=Primary%20Materials`}>Primary</a></li>
+                                            <li><a style={{ backgroundColor:"#071c34", color: "#fda40b" }} href={`service-details?type=Primary%20Materials`}>Primary Materials</a></li>
                                             <div style={{ height: "200px", overflowX: "hidden", overflowX: "auto" }}>
-                                                <li><a href={`service-details?type=Primary%20Materials`}>Roof</a></li>
-                                                <li><a href={`service-details?type=Primary%20Materials`}>Water</a></li>
-                                                <li><a href={`service-details?type=Primary%20Materials`}>Roof</a></li>
-                                                <li><a href={`service-details?type=Primary%20Materials`}>Roof</a></li>
-                                                <li><a href={`service-details?type=Primary%20Materials`}>Water</a></li>
-                                                <li><a href={`service-details?type=Primary%20Materials`}>Roof</a></li>
-                                                <li><a href={`service-details?type=Primary%20Materials`}>Roof</a></li>
-                                                <li><a href={`service-details?type=Primary%20Materials`}>Water</a></li>
-                                                <li><a href={`service-details?type=Primary%20Materials`}>Roof</a></li>
-                                                <li><a href={`service-details?type=Primary%20Materials`}>Roof</a></li>
-                                                <li><a href={`service-details?type=Primary%20Materials`}>Water</a></li>
-                                                <li><a href={`service-details?type=Primary%20Materials`}>Roof</a></li>
+                                                {
+                                                    primaryMaterialsData.map((o) => 
+                                                        <li><a href={`service-details?product=${o.name}&type=Primary%20Materials`}>{o.name}</a></li>
+                                                    )
+                                                }
+                                                {/* <li><a href={`service-details?type=Primary%20Materials`}>AGM Asphalt Roof Shingles</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Nuoran Stone Coated Metal Roof Tiles</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Quick &amp; Click PVC Ceiling &amp; Wall Panels</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Elephant Clay Roofing Tiles</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Shinto Clay Roof Tiles</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>AGM Waterproofing Membrane</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Other AGM Products</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Buttered Clay Roofing Tiles</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Butterfly Floor Tiles &amp; Pavery</a></li>
+                                                <li><a href={`service-details?type=Primary%20Materials`}>Ply Other Products</a></li> */}
                                             </div>
-                                            <li><a style={{ backgroundColor:"#071c34", color: "#fda40b" }} href={`service-details?type=Other%20Materials`}>Secondary</a></li>
+                                            <li><a style={{ backgroundColor:"#071c34", color: "#fda40b" }} href={`service-details?type=Other%20Materials`}>Other Materials</a></li>
                                             <div style={{ height: "200px", overflowX: "hidden", overflowX: "auto" }}>
-                                                <li><a href={`service-details?type=Primary%20Materials`}>Nails</a></li>
-                                                <li><a href={`service-details?type=Primary%20Materials`}>Light</a></li>
-                                                <li><a href={`service-details?type=Primary%20Materials`}>Nails</a></li>
-                                                <li><a href={`service-details?type=Primary%20Materials`}>Light</a></li>
-                                                <li><a href={`service-details?type=Primary%20Materials`}>Nails</a></li>
-                                                <li><a href={`service-details?type=Primary%20Materials`}>Light</a></li>
-                                                <li><a href={`service-details?type=Primary%20Materials`}>Nails</a></li>
-                                                <li><a href={`service-details?type=Primary%20Materials`}>Light</a></li>
-                                                <li><a href={`service-details?type=Primary%20Materials`}>Nails</a></li>
-                                                <li><a href={`service-details?type=Primary%20Materials`}>Light</a></li>
+                                                {
+                                                    otherMaterialsData.map((o) => 
+                                                        <li><a href={`service-details?product=${o.name}&type=Other%20Materials`}>{o.name}</a></li>
+                                                    )
+                                                }
                                             </div>
                                         </ul>
                                     </div>
@@ -155,7 +240,7 @@ function ServicePage() {
                                                             <h2><a href={`service-details?type=${o.type}`}>{o.title}</a></h2>
                                                         </div>
                                                         <p>{o.description}</p>
-                                                        <a href={`/service-category`} class="service-readmore">More Info<span class="lnr lnr-arrow-right"></span></a>
+                                                        <a href={`/service-category?type=${o.title}`} class="service-readmore">More Info<span class="lnr lnr-arrow-right"></span></a>
                                                         {/* <a href={`service-details?type=${o.type}`} class="service-readmore">More Info<span class="lnr lnr-arrow-right"></span></a> */}
                                                     </div>
                                                 </div>
